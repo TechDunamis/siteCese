@@ -1,0 +1,529 @@
+/* Reset CSS */
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Implementa fontes */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/* implementa fonte padão como Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+}
+
+#quem-somos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #5b9fe6;
+  min-width: 1280px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-image: url(imagens/mao-amarela.png),
+    url(imagens/background-azul-esquerda.png), url(imagens/pontilhado.png),
+    url(imagens/background-azul-direita.png), url(imagens/pontilhado.png);
+  background-repeat: no-repeat;
+  background-position: top 10% left 5%, top left, top 15% right 7%,
+    top -20% right 0, bottom -5% left 5%;
+}
+
+#quem-somos h1 {
+  margin: 1.875rem 0 1.875rem 0;
+  font-size: 6.25rem;
+  font-weight: 700;
+}
+
+#quem-somos p {
+  font-size: 1.5625rem;
+  width: 70%;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.apresentacao {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.card-apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18.75rem;
+  margin: 3.125rem;
+}
+
+.card-apresentacao img {
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 50%;
+}
+
+.card-apresentacao h2 {
+  font-size: 1.875rem;
+  margin: 0.625rem;
+  font-weight: 700;
+}
+
+.card-apresentacao span {
+  font-size: 1.1rem;
+  width: 100%;
+}
+#home{
+  position: relative;
+  width: auto;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background-image: url(imagens/background-home.jpg)
+}
+
+#home h1{
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  left: 10%;
+  font-size: 50px;
+  font-weight: 700;
+  color: white;
+  margin-left: 10%;
+  
+}
+.titulo {
+    color:  aqua
+}  
+
+/* Estilo para a seção "voluntario" */
+#voluntario {
+    background-color: rgb(110, 143, 251); 
+    display: block;
+}
+#voluntario .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+    max-width: 1280%;
+    margin: 0 auto
+} 
+/* Estilo para os títulos h1 */
+#voluntario .destaque {
+    font-size: 45px;
+    font-weight: bold;
+    color: #ffffff;  
+    margin-top: 30%;
+    padding: 20px;
+}
+
+/* Estilo para o parágrafo dentro de #voluntario */
+#voluntario .texto {
+    font-size: 25px;
+    color: #ffffff; 
+    margin-bottom: 15px; 
+}
+
+#voluntario .content {
+    flex: 1;
+    padding: 20px;  
+    position: relative;
+    padding-bottom: 150px;
+
+}
+
+#voluntario .image {
+    flex: 1;
+    padding: 100px;
+    box-sizing: border-box; 
+}
+
+#voluntario .image img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 10px; 
+    border-radius: 100%;
+    position: absolute;
+    right: 700px;
+    width: 500px;
+    padding: 10px;
+}
+
+/* Adicione margem à esquerda para a segunda imagem */
+#voluntario .image1 img {
+    margin-left: 280px;
+    max-width: 100%;
+    display: block;
+    padding: 20px;
+    width: 120px;
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+
+}
+
+/* Adicione margem acima para a terceira imagem */
+ .image2 img {
+    margin-top: 100px;
+    width: 100%;
+    max-width: 100px;
+    display: block;
+    position: absolute;
+    bottom:480px;
+    right: 140px;
+}
+
+/* Adicione margem à esquerda e acima para a quarta imagem */
+#voluntario .image3 img {
+    margin-left: 280px;
+    max-width: 100px;
+    display: block;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    left:  -200px;
+}
+/* Estilo para o botão */
+button {
+    padding: 15px 30px;
+    background-color: #e7dd29;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-size: 15px;
+    margin-top: 5%;
+}
+/* Estilo para o botão ao passar o mouse */
+button:hover {
+    background-color: #c5b12f;
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0); /* Não se move */
+    }
+    40% {
+        transform: translateY(-30px); /* Move para cima */
+    }
+    60% {
+        transform: translateY(-15px); /* Move para baixo */
+    }
+}
+
+.image1 {
+    display: inline-block;
+}
+
+#animated-image {
+    animation: bounce 1s infinite; /* Aplica a animação com repetição infinita */
+}
+
+#home p{
+
+  position: absolute;
+  top: 50%;
+  color: white;
+  text-align: center;
+  margin-left: 35%;
+  font-weight: 100;
+  
+}
+img{
+  width: 100%;
+
+}
+.overlay{
+  position: absolute;
+  background: blue;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+  z-index: 0;
+
+}
+.container{
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+}
+.position-button{
+  position: absolute;
+  top: 80%;
+  left: 42%;
+  
+}
+.button{
+  background-color: rgb(233, 233, 3);
+  display: inline-block;
+  border-radius: 30px;
+  padding: 20px 40px 20px 40px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer{
+  background-color: rgb(56, 54, 54);
+  padding: 50px 40px 40px 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.endereço{
+  position: relative;
+  
+}
+.endereço h2{
+  font-size: 30px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.endereço p{
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+}
+.Links{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  
+}
+.Links h2{
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.Links p{
+  color: white;
+  font-size: 15px;
+  font-weight: 100;
+}
+.Contatos{
+  position: relative;
+  font-family: "Poppins", sans-serif;
+}
+.Contatos h2{
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.Contatos p{
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+.icones-sociais{
+  position: relative;
+  right: 90%;
+  padding: 65px 50px 10px 10px;
+  display: flex;
+  align-items: center;
+  width: 6%;
+  list-style: none;
+  gap: 10px;
+}
+#bazar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #337dcc;
+  max-width: 1280px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: white;
+  background-image: url(imagens/mao-branca.png);
+  background-repeat: no-repeat;
+  background-position: top 10% left 5%
+  }
+  .paragrafo-bazar{
+  font-size: 1.5625rem;
+  width: 70%;
+  font-weight: 100;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+  }
+  #bazar h1{
+  margin: 1.875rem 1.875rem 1.875rem 1.875rem;
+  font-size: 6.25rem;
+  font-weight: 700;
+  }
+  #bazar h2{
+  font-size: 1.3rem;
+  font-weight: 800;
+  color:#5b9fe6;
+  }
+  .itens-bazar {
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-content: flex-start;
+  align-content: flex-start;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  
+  }
+  .item-bazar:nth-child(1) {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18.75rem;
+  margin: 3.125rem;
+  background-color:white;
+  color:#5b9fe6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .item-bazar:nth-child(2) {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18.75rem;
+  margin: 3.125rem;
+  background-color:white;
+  color:#5b9fe6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .item-bazar:nth-child(3) {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18.75rem;
+  margin: 3.125rem;
+  background-color:white;
+  color:#5b9fe6;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .botao-confira{
+    background-color: rgba(255, 204, 0, 0.903);
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 70px 10px 70px;
+    margin: 10px 20px 30px 40px;  
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
